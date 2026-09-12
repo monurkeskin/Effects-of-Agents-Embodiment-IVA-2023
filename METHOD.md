@@ -36,6 +36,14 @@ The short Solver and Appearance examples do not claim those fruit reward rules.
 
 ## Remaining evidence gaps
 
+The generic mood policy preserves the inspected legacy experiment branch's
+warning schedule (.60, .73, .86), whereas the paper describes .40, .60 and .80.
+The branch uses Convinced/Content labels where the paper uses Hopeful/Pleased.
+These are presentation differences to resolve against the study configuration,
+not consequences of restricted participant-data access. The original branch also
+selects successive gesture files per mood; the maintained bridge uses a configured
+mapping and does not recreate that sequence automatically.
+
 - Original practice task, instructions/video, seventeen-item instruments and licensed virtual embodiment assets.
 - Historical definition of a round and its session-record conversion.
 - Permitted complete paired records and original exclusion ledger.
