@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "paper_url": "https://doi.org/10.1145/3570945.3607362",
+  "pdf_sha256": "e450eabc28928e17357e1d01de9b5f3c828555916296b0c220c0cc74bed4bb21",
+  "pdf_reference": "Publisher PDF",
+  "verification": "Compared with the cited paper PDF; page numbers count from its first page.",
+  "figures": [
+    {
+      "file": "physical-setting.png",
+      "figure": "Figure 2a; fig-physical-exp-setup",
+      "pdf_page": 4,
+      "source_file": "figures/physicalSetup.png",
+      "source_sha256": "651cc5ee5a57809c41dc9502202f77dde2083f41ff24b5b961b9c6f9bc550b4a",
+      "sha256": "651cc5ee5a57809c41dc9502202f77dde2083f41ff24b5b961b9c6f9bc550b4a",
+      "conversion": "Unmodified source image.",
+      "display_file": "physical-setting.svg",
+      "display_sha256": "14f28b9f9e5f15036c363e65d06791f503c1dcd764360c44dfd9449bae118eeb",
+      "display_note": "SVG places the unmodified image over white, matching the paper and keeping black text visible in dark themes."
+    },
+    {
+      "file": "virtual-setting.png",
+      "figure": "Figure 2b; fig-virtual-exp-setup",
+      "pdf_page": 4,
+      "source_file": "figures/virtualExperimentSetup_new_1.png",
+      "source_sha256": "b62bc17e1d7e62f2819f86b685a0f11bba0e3801c1677c7334e8e3d93503d37b",
+      "sha256": "b62bc17e1d7e62f2819f86b685a0f11bba0e3801c1677c7334e8e3d93503d37b",
+      "conversion": "Unmodified source image.",
+      "display_file": "virtual-setting.svg",
+      "display_sha256": "613885d763a1da401e15bdea2d4ae720ec3f1bee55f73537ea612799964e66d4",
+      "display_note": "SVG places the unmodified image over white, matching the paper and keeping black text visible in dark themes."
+    },
+    {
+      "file": "embodiment-outcomes.png",
+      "figure": "Figure 5; fig-scores",
+      "pdf_page": 6,
+      "source_file": "figures/new_averageScores_30_2.png",
+      "source_sha256": "6d1a59ffa573364cff1d5e7c9b8fbad20610aa11590f215620c0831a28410858",
+      "sha256": "6d1a59ffa573364cff1d5e7c9b8fbad20610aa11590f215620c0831a28410858",
+      "conversion": "Unmodified source image.",
+      "display_file": "embodiment-outcomes.svg",
+      "display_sha256": "4f96a2aafe76ac3d843f1d57ad6aed084fe487de91882c92bfbd12ee95868848",
+      "display_note": "SVG places the unmodified image over white, matching the paper and keeping black text visible in dark themes."
+    }
+  ]
+}
