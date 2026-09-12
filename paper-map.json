@@ -1,0 +1,481 @@
+{
+  "schema_version": 1,
+  "repository": "agent-embodiment-2023",
+  "paper": {
+    "type": "conference-paper",
+    "title": "Effects of Agent's Embodiment in Human-Agent Negotiations",
+    "authors": [
+      {
+        "given-names": "Umut",
+        "family-names": "Çakan"
+      },
+      {
+        "given-names": "Mehmet Onur",
+        "family-names": "Keskin"
+      },
+      {
+        "given-names": "Reyhan",
+        "family-names": "Aydoğan"
+      }
+    ],
+    "year": 2023,
+    "url": "https://doi.org/10.1145/3570945.3607362",
+    "doi": "10.1145/3570945.3607362"
+  },
+  "selected_source": {
+    "entry": "Main.tex",
+    "scope": "Selected publication-aligned manuscript only. Working sources and reviewer correspondence are not distributed."
+  },
+  "framework": "framework.json",
+  "requirements": [
+    {
+      "id": "method-eq-utility",
+      "axis": "method",
+      "requirement": "eq-utility",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "Main.tex",
+          "file": "latex/Preliminary.tex",
+          "sha256": "a644496219fdba57ce2ab0482643157a4a9c7889189858db0b6b711d956576b8",
+          "label": "eq-utility",
+          "line": 8,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "The published arithmetic is implemented and independently checked. This claim concerns the equation, not recovery of the human experiment.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "method-eq-hybrid",
+      "axis": "method",
+      "requirement": "eq-hybrid",
+      "status": "partial",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "Main.tex",
+          "file": "latex/Preliminary.tex",
+          "sha256": "a644496219fdba57ce2ab0482643157a4a9c7889189858db0b6b711d956576b8",
+          "label": "eq-hybrid",
+          "line": 53,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "Implemented maintained component; unreported constants, historical source choice or original assets prevent a claim of complete historical equivalence.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "method-alg-strategy",
+      "axis": "method",
+      "requirement": "alg-strategy",
+      "status": "partial",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "Main.tex",
+          "file": "latex/AgentDesign.tex",
+          "sha256": "b5d454c8bd6b13021d8ef2cacf3ac6f1679b8687193e6ae63e82899bc0a23140",
+          "label": "alg-strategy",
+          "line": 30,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "Implemented maintained component; unreported constants, historical source choice or original assets prevent a claim of complete historical equivalence.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "method-tb-mood-argument",
+      "axis": "method",
+      "requirement": "tb-mood-argument",
+      "status": "partial",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "Main.tex",
+          "file": "latex/AgentDesign.tex",
+          "sha256": "b5d454c8bd6b13021d8ef2cacf3ac6f1679b8687193e6ae63e82899bc0a23140",
+          "label": "tb-mood-argument",
+          "line": 101,
+          "nearby_graphics": [
+            {
+              "reference": "figures/combined_gestures.png",
+              "line": 89,
+              "path": "figures/combined_gestures.png",
+              "sha256": "3ee381bb4d0a2b372d494811c79fc42fe78b8fa7d8f8ba0311fc04d067fb7862"
+            }
+          ]
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "Implemented maintained component; unreported constants, historical source choice or original assets prevent a claim of complete historical equivalence.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "published-profiles",
+      "axis": "protocol",
+      "requirement": "Published points and human-share perspective",
+      "status": "full",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "Main.tex",
+          "file": "latex/Methodology.tex",
+          "sha256": "99da8fc923b70b4a684b31fff663b4070a4063900074e4b09040cc1d04cc5371",
+          "label": "tbl-preferences",
+          "line": 59,
+          "nearby_graphics": [
+            {
+              "reference": "figures/DomainDistribution.png",
+              "line": 50,
+              "path": "figures/DomainDistribution.png",
+              "sha256": "6f74f32fd95c6913e3238c66aa801794352d6b4cbc2d74d6cbf1586381ff9cf7"
+            }
+          ]
+        }
+      ],
+      "implementation": [
+        "configs/",
+        "negotiator.domain.preferences"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_paper_profiles.py"
+        }
+      ],
+      "result_target": "reproduction/profile-1.json",
+      "explanation": "Every allocation is checked independently for both actors and each published session position. Targets and reward thresholds are separate from reservation constraints.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "protocol-schedule",
+      "axis": "protocol",
+      "requirement": "Practice, order, durations, breaks, instruments and condition identity",
+      "status": "partial",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "Main.tex",
+          "file": "latex/Methodology.tex",
+          "sha256": "99da8fc923b70b4a684b31fff663b4070a4063900074e4b09040cc1d04cc5371",
+          "label": "tbl-preferences",
+          "line": 59,
+          "nearby_graphics": [
+            {
+              "reference": "figures/DomainDistribution.png",
+              "line": 50,
+              "path": "figures/DomainDistribution.png",
+              "sha256": "6f74f32fd95c6913e3238c66aa801794352d6b4cbc2d74d6cbf1586381ff9cf7"
+            }
+          ]
+        },
+        {
+          "entry": "Main.tex",
+          "file": "latex/Methodology.tex",
+          "sha256": "99da8fc923b70b4a684b31fff663b4070a4063900074e4b09040cc1d04cc5371",
+          "label": "sec-protocol",
+          "line": 36,
+          "nearby_graphics": [
+            {
+              "reference": "figures/physicalSetup.png",
+              "line": 27,
+              "path": "figures/physicalSetup.png",
+              "sha256": "651cc5ee5a57809c41dc9502202f77dde2083f41ff24b5b961b9c6f9bc550b4a"
+            },
+            {
+              "reference": "figures/virtualExperimentSetup_new_1.png",
+              "line": 28,
+              "path": "figures/virtualExperimentSetup_new_1.png",
+              "sha256": "b62bc17e1d7e62f2819f86b685a0f11bba0e3801c1677c7334e8e3d93503d37b"
+            },
+            {
+              "reference": "figures/DomainDistribution.png",
+              "line": 50,
+              "path": "figures/DomainDistribution.png",
+              "sha256": "6f74f32fd95c6913e3238c66aa801794352d6b4cbc2d74d6cbf1586381ff9cf7"
+            }
+          ]
+        },
+        {
+          "entry": "Main.tex",
+          "file": "latex/Methodology.tex",
+          "sha256": "99da8fc923b70b4a684b31fff663b4070a4063900074e4b09040cc1d04cc5371",
+          "label": "sec-participants",
+          "line": 93,
+          "nearby_graphics": [
+            {
+              "reference": "figures/setup.jpeg",
+              "line": 86,
+              "path": "figures/setup.jpeg",
+              "sha256": "9a774a4c653d69de8700b51c41f91a736571cfd63c5604afbfbd73d109df48a3"
+            }
+          ]
+        }
+      ],
+      "implementation": [
+        "configs/",
+        "protocol-schedule.json",
+        "negotiator.application.protocol",
+        "negotiator.application.studies"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_protocol_contract.py"
+        },
+        {
+          "repository": "framework",
+          "path": "tests/test_study_protocols.py"
+        }
+      ],
+      "result_target": "configs/synthetic.json",
+      "explanation": "Two counterbalanced fifteen-minute main sessions, five-minute break, practice before each, 40-point target. Exclude a participant if either negotiation has fewer than five rounds. Missing original assets and instrument wording remain explicit preflight requirements.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "historical-outcomes",
+      "axis": "analysis",
+      "requirement": "Recompute the original participant results",
+      "status": "unverified",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "Main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c03b41735ddafa027f12c891a247718b578d9dd88d8d14c0d5998b6e16ecc2b2",
+          "label": "fig-scores",
+          "line": 29,
+          "nearby_graphics": [
+            {
+              "reference": "figures/new_averageScores_30_2.png",
+              "line": 26,
+              "path": "figures/new_averageScores_30_2.png",
+              "sha256": "6d1a59ffa573364cff1d5e7c9b8fbad20610aa11590f215620c0831a28410858"
+            }
+          ]
+        },
+        {
+          "entry": "Main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c03b41735ddafa027f12c891a247718b578d9dd88d8d14c0d5998b6e16ecc2b2",
+          "label": "eq-cooperativeness",
+          "line": 58,
+          "nearby_graphics": []
+        },
+        {
+          "entry": "Main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c03b41735ddafa027f12c891a247718b578d9dd88d8d14c0d5998b6e16ecc2b2",
+          "label": "figure-embodiment-questionnaire",
+          "line": 167,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "reproduction/published-results.json"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/published-results.json",
+      "explanation": "Original permitted inputs and historical analysis decisions are unavailable. The recipe returns an unavailable receipt and no numerical result.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "participant-analysis",
+      "axis": "analysis",
+      "requirement": "Participant unit, pairing, cohorts and missingness",
+      "status": "partial",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "Main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c03b41735ddafa027f12c891a247718b578d9dd88d8d14c0d5998b6e16ecc2b2",
+          "label": "fig-scores",
+          "line": 29,
+          "nearby_graphics": [
+            {
+              "reference": "figures/new_averageScores_30_2.png",
+              "line": 26,
+              "path": "figures/new_averageScores_30_2.png",
+              "sha256": "6d1a59ffa573364cff1d5e7c9b8fbad20610aa11590f215620c0831a28410858"
+            }
+          ]
+        },
+        {
+          "entry": "Main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c03b41735ddafa027f12c891a247718b578d9dd88d8d14c0d5998b6e16ecc2b2",
+          "label": "eq-cooperativeness",
+          "line": 58,
+          "nearby_graphics": []
+        },
+        {
+          "entry": "Main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c03b41735ddafa027f12c891a247718b578d9dd88d8d14c0d5998b6e16ecc2b2",
+          "label": "figure-embodiment-questionnaire",
+          "line": 167,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.reproduction.operations.paired_summary",
+        "reproduction/paired-example.json"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_reproduction.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/paired-example.json",
+      "explanation": "Tested generic paired analysis with explicit cohort/domain grouping and exclusions; synthetic input and modern percentile intervals do not reproduce the paper significance tests.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "independent-use",
+      "axis": "runnability",
+      "requirement": "Independent install, configuration, run and report",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "Main.tex",
+          "file": "latex/Methodology.tex",
+          "sha256": "99da8fc923b70b4a684b31fff663b4070a4063900074e4b09040cc1d04cc5371",
+          "label": "tbl-preferences",
+          "line": 59,
+          "nearby_graphics": [
+            {
+              "reference": "figures/DomainDistribution.png",
+              "line": 50,
+              "path": "figures/DomainDistribution.png",
+              "sha256": "6f74f32fd95c6913e3238c66aa801794352d6b4cbc2d74d6cbf1586381ff9cf7"
+            }
+          ]
+        }
+      ],
+      "implementation": [
+        "run.py",
+        "requirements.txt",
+        "framework.json"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_companion.py"
+        }
+      ],
+      "result_target": "configs/synthetic.json",
+      "explanation": "The supported hardware-free example runs in a clean environment using only the pinned engine. Robot operation requires separate lab validation.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "reader-paths",
+      "axis": "documentation",
+      "requirement": "First use, paper inspection, contribution and citation",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "Main.tex",
+          "file": "latex/Preliminary.tex",
+          "sha256": "a644496219fdba57ce2ab0482643157a4a9c7889189858db0b6b711d956576b8",
+          "label": "eq-utility",
+          "line": 8,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "README.md",
+        "METHOD.md",
+        "REPRODUCIBILITY.md",
+        "docs/"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_release_contract.py"
+        }
+      ],
+      "result_target": "reproduction/targets.json",
+      "explanation": "Executable example commands, method map, protocol limits and preferred paper citation are provided.",
+      "documentation": "METHOD.md"
+    }
+  ],
+  "interpretation": {
+    "full": "Evidence supports this scoped requirement, not the entire paper.",
+    "partial": "Some elements are implemented but unresolved method/protocol choices remain.",
+    "unverified": "Required original evidence is unavailable."
+  }
+}

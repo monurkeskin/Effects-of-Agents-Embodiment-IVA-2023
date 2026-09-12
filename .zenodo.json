@@ -1,0 +1,20 @@
+{
+  "title": "Effects of Agent's Embodiment in Human-Agent Negotiations — maintained code companion",
+  "version": "2.0.0",
+  "upload_type": "software",
+  "description": "Maintained research software for Effects of Agent's Embodiment in Human-Agent Negotiations. Reproducibility scope and source provenance are documented in the repository.",
+  "creators": [
+    {
+      "name": "Keskin, Mehmet Onur"
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "related_identifiers": [
+    {
+      "identifier": "10.1145/3570945.3607362",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    }
+  ],
+  "doi": "10.5281/zenodo.22728998"
+}

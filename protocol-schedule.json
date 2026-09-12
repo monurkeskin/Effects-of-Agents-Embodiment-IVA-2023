@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "paper_id": "agent-embodiment-2023",
+  "protocol_summary": "Two counterbalanced fifteen-minute main sessions, five-minute break, practice before each, 40-point target. Exclude a participant if either negotiation has fewer than five rounds.",
+  "historical_instruments_included": false,
+  "unknowns": [
+    "Original practice task, instructions/video, seventeen-item instruments and licensed virtual embodiment assets",
+    "Historical definition of a round and its session-record conversion",
+    "Permitted complete paired records and original exclusion ledger"
+  ],
+  "required_before_human_use": "Resolve each missing evidence item and validate the local study protocol before starting.",
+  "analysis_unit": "participant",
+  "minimum_rounds_in_either_session": 5,
+  "round_definition": "Must be supplied from the historical record; do not equate rounds with individual offers.",
+  "questionnaires": "post_study",
+  "empirical_reproduction": "unavailable: original permitted inputs and analysis provenance are not included"
+}

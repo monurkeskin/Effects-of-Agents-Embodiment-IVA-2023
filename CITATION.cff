@@ -1,0 +1,38 @@
+{
+  "cff-version": "1.2.0",
+  "message": "Please cite the associated paper, and NEGOTIATOR for the framework. Record the software version used.",
+  "type": "software",
+  "title": "Effects of Agent's Embodiment in Human-Agent Negotiations — maintained code companion",
+  "authors": [
+    {
+      "given-names": "Mehmet Onur",
+      "family-names": "Keskin"
+    }
+  ],
+  "version": "2.0.0",
+  "date-released": "2026-09-12",
+  "license": "GPL-3.0-only",
+  "repository-code": "https://github.com/monurkeskin/agent-embodiment-2023",
+  "doi": "10.5281/zenodo.22728998",
+  "preferred-citation": {
+    "type": "conference-paper",
+    "title": "Effects of Agent's Embodiment in Human-Agent Negotiations",
+    "authors": [
+      {
+        "given-names": "Umut",
+        "family-names": "Çakan"
+      },
+      {
+        "given-names": "Mehmet Onur",
+        "family-names": "Keskin"
+      },
+      {
+        "given-names": "Reyhan",
+        "family-names": "Aydoğan"
+      }
+    ],
+    "year": 2023,
+    "url": "https://doi.org/10.1145/3570945.3607362",
+    "doi": "10.1145/3570945.3607362"
+  }
+}

@@ -1,0 +1,1105 @@
+{
+  "study_id": "agent-embodiment-2023",
+  "participant_id": "P001",
+  "title": "Effects of Agent's Embodiment in Human-Agent Negotiations",
+  "domain": "fruits",
+  "preference_mode": "assigned",
+  "cohort": "default",
+  "first_actor": "human",
+  "output": "text",
+  "seed": 42,
+  "synthetic": false,
+  "instructions": "Study the displayed preferences and negotiate a complete offer before the deadline. Allocation quantities are what you keep.",
+  "surveys": [],
+  "conditions": [
+    {
+      "label": "Illustrative practice 1",
+      "strategy": "hybrid",
+      "practice": true,
+      "duration_seconds": 300,
+      "domain": {
+        "schema_version": 1,
+        "name": "Illustrative three-issue practice",
+        "issues": [
+          {
+            "name": "map",
+            "total": 1
+          },
+          {
+            "name": "water",
+            "total": 1
+          },
+          {
+            "name": "food",
+            "total": 1
+          }
+        ]
+      },
+      "block": "embodiment-1",
+      "output": "nao",
+      "output_device": null,
+      "human_profile": {
+        "weights": {
+          "map": 0.5,
+          "water": 0.3333333333333333,
+          "food": 0.16666666666666666
+        },
+        "scores": {
+          "map": [
+            {
+              "value": 0,
+              "score": 0.5
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "water": [
+            {
+              "value": 0,
+              "score": 0.5
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 0.5
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ]
+        },
+        "provenance": "assigned",
+        "reservation": 0.0,
+        "conversion": "synthetic-rank-linear-paired-v1"
+      },
+      "agent_profile": {
+        "weights": {
+          "map": 0.3333333333333333,
+          "water": 0.5,
+          "food": 0.16666666666666666
+        },
+        "scores": {
+          "map": [
+            {
+              "value": 0,
+              "score": 1.0
+            },
+            {
+              "value": 1,
+              "score": 0.5
+            }
+          ],
+          "water": [
+            {
+              "value": 0,
+              "score": 1.0
+            },
+            {
+              "value": 1,
+              "score": 0.5
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 1.0
+            },
+            {
+              "value": 1,
+              "score": 0.5
+            }
+          ]
+        },
+        "provenance": "assigned",
+        "reservation": 0.0,
+        "conversion": "rank-linear-paired-v1"
+      }
+    },
+    {
+      "label": "NAO",
+      "strategy": "hybrid",
+      "duration_seconds": 900,
+      "domain": "fruits",
+      "output": "nao",
+      "human_profile": {
+        "weights": {
+          "watermelon": 0.48,
+          "banana": 0.32,
+          "orange": 0.16,
+          "apple": 0.04
+        },
+        "scores": {
+          "watermelon": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "banana": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "orange": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "apple": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2023-embodiment-tbl-preferences-points-v1"
+      },
+      "agent_profile": {
+        "weights": {
+          "watermelon": 0.16,
+          "banana": 0.04,
+          "orange": 0.48,
+          "apple": 0.32
+        },
+        "scores": {
+          "watermelon": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "banana": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "orange": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "apple": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2023-embodiment-tbl-preferences-points-v1"
+      },
+      "block": "embodiment-1",
+      "break_after_seconds": 300,
+      "practice": false,
+      "score_targets": {
+        "human": 0.4
+      },
+      "reward_minimums": {
+        "human": 0.4
+      }
+    },
+    {
+      "label": "Illustrative practice 2",
+      "strategy": "hybrid",
+      "practice": true,
+      "duration_seconds": 300,
+      "domain": {
+        "schema_version": 1,
+        "name": "Illustrative three-issue practice",
+        "issues": [
+          {
+            "name": "map",
+            "total": 1
+          },
+          {
+            "name": "water",
+            "total": 1
+          },
+          {
+            "name": "food",
+            "total": 1
+          }
+        ]
+      },
+      "block": "embodiment-2",
+      "output": "avatar",
+      "output_device": null,
+      "human_profile": {
+        "weights": {
+          "map": 0.5,
+          "water": 0.3333333333333333,
+          "food": 0.16666666666666666
+        },
+        "scores": {
+          "map": [
+            {
+              "value": 0,
+              "score": 0.5
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "water": [
+            {
+              "value": 0,
+              "score": 0.5
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 0.5
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ]
+        },
+        "provenance": "assigned",
+        "reservation": 0.0,
+        "conversion": "synthetic-rank-linear-paired-v1"
+      },
+      "agent_profile": {
+        "weights": {
+          "map": 0.3333333333333333,
+          "water": 0.5,
+          "food": 0.16666666666666666
+        },
+        "scores": {
+          "map": [
+            {
+              "value": 0,
+              "score": 1.0
+            },
+            {
+              "value": 1,
+              "score": 0.5
+            }
+          ],
+          "water": [
+            {
+              "value": 0,
+              "score": 1.0
+            },
+            {
+              "value": 1,
+              "score": 0.5
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 1.0
+            },
+            {
+              "value": 1,
+              "score": 0.5
+            }
+          ]
+        },
+        "provenance": "assigned",
+        "reservation": 0.0,
+        "conversion": "rank-linear-paired-v1"
+      }
+    },
+    {
+      "label": "Virtual representation",
+      "strategy": "hybrid",
+      "duration_seconds": 900,
+      "domain": "fruits",
+      "output": "avatar",
+      "human_profile": {
+        "weights": {
+          "watermelon": 0.16,
+          "banana": 0.04,
+          "orange": 0.48,
+          "apple": 0.32
+        },
+        "scores": {
+          "watermelon": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "banana": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "orange": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "apple": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2023-embodiment-tbl-preferences-points-v1"
+      },
+      "agent_profile": {
+        "weights": {
+          "watermelon": 0.48,
+          "banana": 0.32,
+          "orange": 0.16,
+          "apple": 0.04
+        },
+        "scores": {
+          "watermelon": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "banana": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "orange": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "apple": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2023-embodiment-tbl-preferences-points-v1"
+      },
+      "block": "embodiment-2",
+      "break_after_seconds": 300,
+      "practice": false,
+      "score_targets": {
+        "human": 0.4
+      },
+      "reward_minimums": {
+        "human": 0.4
+      }
+    }
+  ],
+  "purpose": "published-protocol",
+  "citation_ids": [
+    "agent-embodiment-2023"
+  ],
+  "order": "counterbalanced",
+  "position_profiles": [
+    {
+      "human_profile": {
+        "weights": {
+          "watermelon": 0.48,
+          "banana": 0.32,
+          "orange": 0.16,
+          "apple": 0.04
+        },
+        "scores": {
+          "watermelon": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "banana": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "orange": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "apple": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2023-embodiment-tbl-preferences-points-v1"
+      },
+      "agent_profile": {
+        "weights": {
+          "watermelon": 0.16,
+          "banana": 0.04,
+          "orange": 0.48,
+          "apple": 0.32
+        },
+        "scores": {
+          "watermelon": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "banana": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "orange": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "apple": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2023-embodiment-tbl-preferences-points-v1"
+      }
+    },
+    {
+      "human_profile": {
+        "weights": {
+          "watermelon": 0.16,
+          "banana": 0.04,
+          "orange": 0.48,
+          "apple": 0.32
+        },
+        "scores": {
+          "watermelon": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "banana": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "orange": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "apple": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2023-embodiment-tbl-preferences-points-v1"
+      },
+      "agent_profile": {
+        "weights": {
+          "watermelon": 0.48,
+          "banana": 0.32,
+          "orange": 0.16,
+          "apple": 0.04
+        },
+        "scores": {
+          "watermelon": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "banana": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "orange": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "apple": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 0.25
+            },
+            {
+              "value": 2,
+              "score": 0.5
+            },
+            {
+              "value": 3,
+              "score": 0.75
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2023-embodiment-tbl-preferences-points-v1"
+      }
+    }
+  ],
+  "protocol": {
+    "id": "agent-embodiment-2023",
+    "revision": "2",
+    "paper": "https://doi.org/10.1145/3570945.3607362",
+    "requirements": [
+      {
+        "id": "evidence-1",
+        "description": "Original practice task, instructions/video, seventeen-item instruments and licensed virtual embodiment assets"
+      },
+      {
+        "id": "evidence-2",
+        "description": "Historical definition of a round and its session-record conversion"
+      }
+    ],
+    "configuration_sha256": "7eae42600697d429cccde5b7e4b8485eefb310ca5dd7b252c218296600d75bd8"
+  }
+}
