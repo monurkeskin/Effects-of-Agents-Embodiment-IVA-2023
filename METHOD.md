@@ -6,7 +6,7 @@ Associated paper: [Effects of Agent's Embodiment in Human-Agent Negotiations](ht
 
 Hybrid bidding with additive fruit utility; physical NAO versus recorded virtual embodiment.
 
-Two counterbalanced fifteen-minute main sessions, five-minute break, practice before each, 40-point target. Exclude a participant if either negotiation has fewer than five rounds.
+Two counterbalanced fifteen-minute main sessions, five-minute break, practice before each, 40-point target. Exclude a participant pair if either negotiation has fewer than five individual committed offers (human and agent combined).
 
 The machine-readable [paper map](paper-map.json) links selected manuscript labels,
 source hashes and locations to implementation, independent tests, configurations
@@ -36,16 +36,16 @@ The short Solver and Appearance examples do not claim those fruit reward rules.
 
 ## Remaining evidence gaps
 
-The generic mood policy preserves the inspected legacy experiment branch's
-warning schedule (.60, .73, .86), whereas the paper describes .40, .60 and .80.
-The branch uses Convinced/Content labels where the paper uses Hopeful/Pleased.
-These are presentation differences to resolve against the study configuration,
-not consequences of restricted participant-data access. The original branch also
-selects successive gesture files per mood; the maintained bridge uses a configured
-mapping and does not recreate that sequence automatically.
+The paper's five-round exclusion uses **individual offers**, confirmed by the
+maintainer on 13 September 2026 and consistent with the historical offer counter.
+With human-first alternation, the third human offer is the fifth offer and meets
+this criterion. Acceptance, readiness signals and rejected input are not additional
+offers. If either main session has fewer than five, exclude the entire participant
+pair. This definition is specific to this paper; it does not determine later studies'
+use of the word "round". See the boundary and journal tests in
+[test_offer_exclusion.py](tests/test_offer_exclusion.py).
 
 - Original practice task, instructions/video, seventeen-item instruments and licensed virtual embodiment assets.
-- Historical definition of a round and its session-record conversion.
 - Permitted complete paired records and original exclusion ledger.
 
 Unknown inputs are not filled with simulated participants or invented historical
@@ -62,3 +62,12 @@ The common engine owns utility, lifecycle, logs, GUI, shared methods and device
 contracts. This repository owns paper-specific profiles, protocol choices, analysis
 rules, reproduction targets and tests. [framework.json](framework.json) pins the
 engine; [NOTICE](NOTICE) preserves original source attribution.
+
+## Presentation choices and historical differences
+
+The generic policy retains the inspected legacy branch's .60/.73/.86 warning
+schedule. The paper describes .40/.60/.80 and uses Hopeful/Pleased where the
+branch uses Convinced/Content. Those maintained choices remain explicit; a common
+agent API does not make the two schedules or mood vocabularies equivalent.
+The old branch also selects successive gesture files per mood. The current bridge
+uses a configured map, so it does not reconstruct the original clip sequence.

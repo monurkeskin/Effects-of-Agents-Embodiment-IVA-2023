@@ -202,6 +202,10 @@
         {
           "repository": "companion",
           "path": "tests/test_paper_profiles.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_requirement_scope.py"
         }
       ],
       "result_target": "reproduction/profile-1.json",
@@ -287,10 +291,14 @@
         {
           "repository": "framework",
           "path": "tests/test_study_protocols.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_requirement_scope.py"
         }
       ],
       "result_target": "configs/synthetic.json",
-      "explanation": "Two counterbalanced fifteen-minute main sessions, five-minute break, practice before each, 40-point target. Exclude a participant if either negotiation has fewer than five rounds. Missing original assets and instrument wording remain explicit preflight requirements.",
+      "explanation": "Two counterbalanced fifteen-minute main sessions, five-minute break, practice before each, 40-point target. Exclude a participant pair if either negotiation has fewer than five individual committed offers (human and agent combined). Missing original assets and instrument wording remain explicit preflight requirements.",
       "documentation": "METHOD.md"
     },
     {
@@ -396,10 +404,14 @@
         {
           "repository": "companion",
           "path": "tests/test_reproduction_targets.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_offer_exclusion.py"
         }
       ],
       "result_target": "reproduction/paired-example.json",
-      "explanation": "Tested generic paired analysis with explicit cohort/domain grouping and exclusions; synthetic input and modern percentile intervals do not reproduce the paper significance tests.",
+      "explanation": "Tested generic paired analysis with explicit cohort/domain grouping and exclusions; synthetic input and modern percentile intervals do not reproduce the paper significance tests. The maintainer confirmed five individual offers as the exclusion boundary; tests cover four, five and six offers in either session and acceptance without an additional offer.",
       "documentation": "METHOD.md"
     },
     {
@@ -471,6 +483,38 @@
       "result_target": "reproduction/targets.json",
       "explanation": "Executable example commands, method map, protocol limits and preferred paper citation are provided.",
       "documentation": "METHOD.md"
+    },
+    {
+      "id": "measurement-normalized-utility-product",
+      "axis": "measurement",
+      "requirement": "Agreement utility product divided by the maximum domain product; separately identified from the utility sum.",
+      "status": "full",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "Main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c03b41735ddafa027f12c891a247718b578d9dd88d8d14c0d5998b6e16ecc2b2",
+          "label": "unlabeled:normalized-utility-product",
+          "line": 34,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.analysis.metrics.outcome_metrics",
+        "negotiator.analysis.report"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_paper_profiles.py"
+        },
+        {
+          "repository": "framework",
+          "path": "tests/test_report_metrics.py"
+        }
+      ],
+      "notes": "Arithmetic verified in both 625-outcome session profiles. Original participant aggregates are outside this requirement."
     }
   ],
   "interpretation": {

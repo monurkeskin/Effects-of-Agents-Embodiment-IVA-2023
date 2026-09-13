@@ -5,7 +5,7 @@
   "claim_scope": "synthetic-validation",
   "analysis": "paired-summary",
   "environment": {
-    "framework": "2.0.0"
+    "framework": "2.1.0"
   },
   "parameters": {
     "conditions": [
@@ -30,5 +30,5 @@
       "source": "Three explicitly constructed paired fixture participants"
     }
   ],
-  "description": "Analysis-contract demonstration. Percentile participant bootstrap is a maintained analysis example, not a claim to recover the paper significance test."
+  "description": "Analysis-contract demonstration. Percentile participant bootstrap is a maintained analysis example, not a claim to recover the paper significance test. For this paper, the legacy rounds input column counts individual committed offers from both actors; the minimum is five in each session, with the entire pair excluded otherwise."
 }

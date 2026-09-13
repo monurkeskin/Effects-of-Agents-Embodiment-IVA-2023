@@ -11,7 +11,7 @@ and **replicating a human finding**. The associated paper is [Effects of Agent's
 | `profile-1.json` | Recompute and check against independent references |
 | `profile-2.json` | Recompute and check against independent references |
 | `paired-example.json` | Recompute and check against independent references |
-| `published-results.json` | Restricted original inputs; method/demo recipes are available separately |
+| `published-results.json` | Unavailable original inputs; no numbers fabricated |
 
 ```bash
 python verify.py --output verification-output
@@ -50,13 +50,14 @@ outputs are never overwritten.
 
 ## Analysis unit and historical interpretation
 
-Two counterbalanced fifteen-minute main sessions, five-minute break, practice before each, 40-point target. Exclude a participant if either negotiation has fewer than five rounds.
+Two counterbalanced fifteen-minute main sessions, five-minute break, practice before each, 40-point target. Exclude a participant pair if either negotiation has fewer than five individual committed offers (human and agent combined).
 
 The paired example uses one record per participant/condition and keeps study, cohort
 and domain separate. It excludes whole pairs for missing conditions, missing utility
-or a prespecified round rule. It never counts offers as independent people. A round
-count must be converted from the historical protocol explicitly; one offer is not
-assumed to be a complete exchange. The example's bootstrap resamples participants
+or fewer than five individual offers in either session. The legacy input column
+`rounds` holds the combined human and agent offer count for this paper, confirmed
+by the maintainer on 13 September 2026. Acceptance adds no offer; three human offers
+in human-first alternation meet the threshold. The example's bootstrap resamples participants
 with seed 42. Its intervals are a maintained analysis demonstration, not a recovered
 paper p-value or a substitute for a prespecified historical analysis.
 

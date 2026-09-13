@@ -1088,16 +1088,13 @@
   ],
   "protocol": {
     "id": "agent-embodiment-2023",
-    "revision": "2",
+    "revision": "3",
     "paper": "https://doi.org/10.1145/3570945.3607362",
     "requirements": [
       {
         "id": "evidence-1",
-        "description": "Original practice task, instructions/video, seventeen-item instruments and licensed virtual embodiment assets"
-      },
-      {
-        "id": "evidence-2",
-        "description": "Historical definition of a round and its session-record conversion"
+        "description": "Original practice task, instructions/video, seventeen-item instruments and licensed virtual embodiment assets",
+        "required_for": "execution"
       }
     ],
     "configuration_sha256": "7eae42600697d429cccde5b7e4b8485eefb310ca5dd7b252c218296600d75bd8"

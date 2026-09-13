@@ -1,6 +1,6 @@
 # Configure and conduct this protocol
 
-Two counterbalanced fifteen-minute main sessions, five-minute break, practice before each, 40-point target. Exclude a participant if either negotiation has fewer than five rounds.
+Two counterbalanced fifteen-minute main sessions, five-minute break, practice before each, 40-point target. Exclude a participant pair if either negotiation has fewer than five individual committed offers (human and agent combined).
 
 ## First inspection
 
@@ -26,8 +26,11 @@ questionnaire. A restart conservatively restarts the full break and records this
 ## Before using a published-protocol template
 
 - Original practice task, instructions/video, seventeen-item instruments and licensed virtual embodiment assets.
-- Historical definition of a round and its session-record conversion.
-- Permitted complete paired records and original exclusion ledger.
+
+Historical paired records and the exclusion ledger are needed for recomputing the
+published results, not for starting a new study. The five-offer definition is now
+documented in [the analysis guide](analysis.md); no extra evidence file is required
+for that definition. Original virtual stimuli remain an explicit asset gap.
 
 The templates contain hash-pinned scientific configuration and named evidence
 requirements. Supply only validated local files and their SHA-256 for the appropriate
@@ -49,3 +52,16 @@ continuing; restarting an interrupted session does not invent elapsed time.
 After completion use **Build report**, or run `negotiator report PATH --output NEW_DIR`.
 Keep original records and the generated report together, and export citations using
 `negotiator cite PATH --format bibtex`. [Analysis guide](analysis.md).
+
+## Materials for a new session
+
+Each protocol requirement names its purpose. `execution` requirements cover the
+model, instruments and presentation materials needed to run the configured study.
+Their availability and hashes are checked before a session starts.
+`historical-analysis` requirements describe evidence needed to assess the original
+experiment; unavailable participant records do not prevent a new session.
+
+This separation does not establish equivalence with the historical experiment.
+A demonstration remains synthetic, and a missing runtime asset still blocks a
+published-protocol run. Inspect historical requirements separately with
+`protocol_readiness(spec, operation="historical-analysis")`.

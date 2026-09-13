@@ -72,7 +72,7 @@ Explore the fruit utility space, examine the two exact point profiles and follow
 | Embodiment protocol | [docs/protocol.md](docs/protocol.md) | Keep practice, order, breaks and exclusions distinct. |
 
 The configurations, method checks and study guides are specific to this paper. The shared [NEGOTIATOR framework](https://github.com/monurkeskin/NEGOTIATOR-IJCAI-2024) runs the negotiation,
-participant/conductor views and session analysis. Its exact **2.0.0** revision is
+participant/conductor views and session analysis. Its exact **2.1.0** revision is
 pinned in [framework.json](framework.json); installation brings it in automatically.
 
 The browser avatar provides a convenient demonstration; it is not the recorded virtual robot used in the study. The maintained mood schedule follows a historical code variant that differs from the paper's stated warning times. [METHOD.md](METHOD.md) and the protocol guide identify the remaining presentation/protocol choices.
@@ -144,7 +144,7 @@ If you use this method or study design, please cite the associated paper:
 ```
 
 The [citation file](CITATION.cff) provides the paper as the preferred citation.
-For software provenance, also record the version and [archived 2.0.0 artifact](https://doi.org/10.5281/zenodo.22728998).
+For software provenance, record the [2.1.0 release](https://github.com/monurkeskin/Effects-of-Agents-Embodiment-IVA-2023/releases/tag/v2.1.0) and commit used. The earlier [archived 2.0.0 artifact](https://doi.org/10.5281/zenodo.22728998) remains available.
 When using the shared engine in new research, cite the
 [NEGOTIATOR framework paper](https://doi.org/10.24963/ijcai.2024/1012).
 GPL-3.0-only; original contributors and sources are credited in [NOTICE](NOTICE).
