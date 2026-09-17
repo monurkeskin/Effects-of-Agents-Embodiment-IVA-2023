@@ -5,6 +5,7 @@ Umut Çakan · Mehmet Onur Keskin · Reyhan Aydoğan
 [Paper](https://doi.org/10.1145/3570945.3607362) · [Explore the method](METHOD.md) · [Try the code](#try-it-yourself) · [Study guide](docs/protocol.md) · [Citation](#cite-the-paper)
 
 [![Tests](https://github.com/monurkeskin/Effects-of-Agents-Embodiment-IVA-2023/actions/workflows/tests.yml/badge.svg)](https://github.com/monurkeskin/Effects-of-Agents-Embodiment-IVA-2023/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/monurkeskin/Effects-of-Agents-Embodiment-IVA-2023/branch/main/graph/badge.svg)](https://codecov.io/gh/monurkeskin/Effects-of-Agents-Embodiment-IVA-2023)
 
 Would you bargain differently with a robot sitting across the table than with
 the same agent on a screen? **Caduceus keeps the negotiation strategy, gestures
